@@ -1305,8 +1305,8 @@ Attract leads, streamline communication, and elevate your LinkedIn strategy—al
         <div class="demo-blue-bg"></div>
       </section>
     </div>
-    
-    <!-- <div id="pricing-section" class="pricing-section">
+
+    <div id="pricing-section" class="pricing-section">
       <div class="new-container w-container">
         <div data-w-id="b082a1d2-8955-f9dc-f7ea-92f05f96c759" style="opacity: 0" class="pricing-section-title-wrap">
           <div class="section-sub-title-wrap">
@@ -1657,7 +1657,7 @@ Attract leads, streamline communication, and elevate your LinkedIn strategy—al
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <section class="stack-section">
       <div class="w-layout-blockcontainer new-container w-container">
         <div class="align-center">
@@ -1908,7 +1908,37 @@ Attract leads, streamline communication, and elevate your LinkedIn strategy—al
     type="text/javascript"></script>
   <script src='//uae.fw-cdn.com/40170187/104514.js' chat='true'>
   </script>
+<script>
+  document
+    .getElementById("toggleDiv")
+    .addEventListener("click", toggleBodyClass);
+  function toggleBodyClass() {
+    var body = document.body;
+    // Toggle the "highlighted" class on the body
+    if (body.classList.contains("dark-version")) {
+      body.classList.remove("dark-version");
+    } else {
+      body.classList.add("dark-version");
+    }
+  }
+</script>
+<script>
+  // Check for system preference on page load
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark-version');
+  } else {
+    document.body.classList.remove('dark-version');
+  }
 
+  // Optional: Listen for changes in system theme settings
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    if (event.matches) {
+      document.body.classList.add('dark-version');
+    } else {
+      document.body.classList.remove('dark-version');
+    }
+  });
+</script>
   <script>
     (function (e, t, o, n, p, r, i) {
       e.visitorGlobalObjectAlias = n;
@@ -1932,23 +1962,10 @@ Attract leads, streamline communication, and elevate your LinkedIn strategy—al
     );
     vgo("setAccount", "225518983");
     vgo("setTrackByDefault", true);
-
+    
     vgo("process");
-  </script>
-  <script>
-    document
-      .getElementById("toggleDiv")
-      .addEventListener("click", toggleBodyClass);
-    function toggleBodyClass() {
-      var body = document.body;
-      // Toggle the "highlighted" class on the body
-      if (body.classList.contains("dark-version")) {
-        body.classList.remove("dark-version");
-      } else {
-        body.classList.add("dark-version");
-      }
-    }
-  </script>
+    </script>
+    
 </body>
 
 </html>

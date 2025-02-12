@@ -1,0 +1,1147 @@
+<html lang="en" class="dark">
+
+<head>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="hvmbgi" data-token-hash="qbosa3">
+        :where(.css-nyvj9s) a {
+            color: #1677ff;
+            text-decoration: none;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            transition: color 0.3s;
+            -webkit-text-decoration-skip: objects;
+        }
+
+        :where(.css-nyvj9s) a:hover {
+            color: #69b1ff;
+        }
+
+        :where(.css-nyvj9s) a:active {
+            color: #0958d9;
+        }
+
+        :where(.css-nyvj9s) a:active,
+        :where(.css-nyvj9s) a:hover {
+            text-decoration: none;
+            outline: 0;
+        }
+
+        :where(.css-nyvj9s) a:focus {
+            text-decoration: none;
+            outline: 0;
+        }
+
+        :where(.css-nyvj9s) a[disabled] {
+            color: rgba(243, 246, 255, 0.25);
+            cursor: not-allowed;
+        }
+
+        :where(.css-nyvj9s).anticon {
+            display: inline-flex;
+            align-items: center;
+            color: inherit;
+            font-style: normal;
+            line-height: 0;
+            text-align: center;
+            text-transform: none;
+            vertical-align: -0.125em;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        :where(.css-nyvj9s).anticon>* {
+            line-height: 1;
+        }
+
+        :where(.css-nyvj9s).anticon svg {
+            display: inline-block;
+        }
+
+        :where(.css-nyvj9s).anticon .anticon .anticon-icon {
+            display: block;
+        }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="18xlss6" data-token-hash="qbosa3">
+        :where(.css-nyvj9s).ant-drawer {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-drawer::before,
+        :where(.css-nyvj9s).ant-drawer::after {
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-drawer [class^="ant-drawer"],
+        :where(.css-nyvj9s).ant-drawer [class*=" ant-drawer"] {
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-drawer [class^="ant-drawer"]::before,
+        :where(.css-nyvj9s).ant-drawer [class*=" ant-drawer"]::before,
+        :where(.css-nyvj9s).ant-drawer [class^="ant-drawer"]::after,
+        :where(.css-nyvj9s).ant-drawer [class*=" ant-drawer"]::after {
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-drawer {
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            pointer-events: none;
+            color: rgba(243, 246, 255, 0.88);
+        }
+
+        :where(.css-nyvj9s).ant-drawer-pure {
+            position: relative;
+            background: #070d1b;
+            display: flex;
+            flex-direction: column;
+        }
+
+        :where(.css-nyvj9s).ant-drawer-pure.ant-drawer-left {
+            box-shadow: 6px 0 16px 0 rgba(0, 0, 0, 0.08), 3px 0 6px -4px rgba(0, 0, 0, 0.12), 9px 0 28px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        :where(.css-nyvj9s).ant-drawer-pure.ant-drawer-right {
+            box-shadow: -6px 0 16px 0 rgba(0, 0, 0, 0.08), -3px 0 6px -4px rgba(0, 0, 0, 0.12), -9px 0 28px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        :where(.css-nyvj9s).ant-drawer-pure.ant-drawer-top {
+            box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        :where(.css-nyvj9s).ant-drawer-pure.ant-drawer-bottom {
+            box-shadow: 0 -6px 16px 0 rgba(0, 0, 0, 0.08), 0 -3px 6px -4px rgba(0, 0, 0, 0.12), 0 -9px 28px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        :where(.css-nyvj9s).ant-drawer-inline {
+            position: absolute;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask {
+            position: absolute;
+            inset: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.45);
+            pointer-events: auto;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-content-wrapper {
+            position: absolute;
+            z-index: 1000;
+            max-width: 100vw;
+            transition: all 0.3s;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-content-wrapper-hidden {
+            display: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer-left>.ant-drawer-content-wrapper {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            box-shadow: 6px 0 16px 0 rgba(0, 0, 0, 0.08), 3px 0 6px -4px rgba(0, 0, 0, 0.12), 9px 0 28px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        :where(.css-nyvj9s).ant-drawer-right>.ant-drawer-content-wrapper {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: -6px 0 16px 0 rgba(0, 0, 0, 0.08), -3px 0 6px -4px rgba(0, 0, 0, 0.12), -9px 0 28px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        :where(.css-nyvj9s).ant-drawer-top>.ant-drawer-content-wrapper {
+            top: 0;
+            inset-inline: 0;
+            box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        :where(.css-nyvj9s).ant-drawer-bottom>.ant-drawer-content-wrapper {
+            bottom: 0;
+            inset-inline: 0;
+            box-shadow: 0 -6px 16px 0 rgba(0, 0, 0, 0.08), 0 -3px 6px -4px rgba(0, 0, 0, 0.12), 0 -9px 28px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background: #070d1b;
+            pointer-events: auto;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-header {
+            display: flex;
+            flex: 0;
+            align-items: center;
+            padding: 16px 24px;
+            font-size: 16px;
+            line-height: 1.5;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.89);
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-header-title {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            min-width: 0;
+            min-height: 0;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-extra {
+            flex: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-close {
+            display: inline-flex;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            margin-inline-end: 8px;
+            color: rgba(243, 246, 255, 0.45);
+            font-weight: 600;
+            font-size: 16px;
+            font-style: normal;
+            line-height: 1;
+            text-align: center;
+            text-transform: none;
+            text-decoration: none;
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-rendering: auto;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-close:hover {
+            color: rgba(243, 246, 255, 0.88);
+            background-color: rgba(243, 246, 255, 0.06);
+            text-decoration: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-close:active {
+            background-color: rgba(243, 246, 255, 0.15);
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-close:focus-visible {
+            outline: 3px solid #37393d;
+            outline-offset: 1px;
+            transition: outline-offset 0s, outline 0s;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-title {
+            flex: 1;
+            margin: 0;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-body {
+            flex: 1;
+            min-width: 0;
+            min-height: 0;
+            padding: 24px;
+            overflow: auto;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-body .ant-drawer-body-skeleton {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-footer {
+            flex-shrink: 0;
+            padding: 8px 16px;
+            border-top: 1px solid rgba(0, 0, 0, 0.89);
+        }
+
+        :where(.css-nyvj9s).ant-drawer-rtl {
+            direction: rtl;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-enter-start,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-appear-start,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-leave-start {
+            transition: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-appear-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-leave-active {
+            transition: all 0.3s;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-enter,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-appear {
+            opacity: 0;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-appear-active {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-leave {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-mask-motion-leave-active {
+            opacity: 0;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-enter-start,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-appear-start,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-leave-start {
+            transition: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-appear-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-leave-active {
+            transition: all 0.3s;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-enter,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-appear {
+            opacity: 0.7;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-appear-active {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-leave {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-leave-active {
+            opacity: 0.7;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-enter,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-appear {
+            transform: translateX(-100%);
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-appear-active {
+            transform: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-leave {
+            transform: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-left-leave-active {
+            transform: translateX(-100%);
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-enter-start,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-appear-start,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-leave-start {
+            transition: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-appear-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-leave-active {
+            transition: all 0.3s;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-enter,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-appear {
+            opacity: 0.7;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-appear-active {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-leave {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-leave-active {
+            opacity: 0.7;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-enter,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-appear {
+            transform: translateX(100%);
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-appear-active {
+            transform: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-leave {
+            transform: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-right-leave-active {
+            transform: translateX(100%);
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-enter-start,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-appear-start,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-leave-start {
+            transition: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-appear-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-leave-active {
+            transition: all 0.3s;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-enter,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-appear {
+            opacity: 0.7;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-appear-active {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-leave {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-leave-active {
+            opacity: 0.7;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-enter,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-appear {
+            transform: translateY(-100%);
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-appear-active {
+            transform: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-leave {
+            transform: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-top-leave-active {
+            transform: translateY(-100%);
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-enter-start,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-appear-start,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-leave-start {
+            transition: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-appear-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-leave-active {
+            transition: all 0.3s;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-enter,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-appear {
+            opacity: 0.7;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-appear-active {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-leave {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-leave-active {
+            opacity: 0.7;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-enter,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-appear {
+            transform: translateY(100%);
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-enter-active,
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-appear-active {
+            transform: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-leave {
+            transform: none;
+        }
+
+        :where(.css-nyvj9s).ant-drawer .ant-drawer-panel-motion-bottom-leave-active {
+            transform: translateY(100%);
+        }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="1vswktx" data-token-hash="qbosa3">
+        :where(.css-nyvj9s).ant-carousel {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-carousel::before,
+        :where(.css-nyvj9s).ant-carousel::after {
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-carousel [class^="ant-carousel"],
+        :where(.css-nyvj9s).ant-carousel [class*=" ant-carousel"] {
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-carousel [class^="ant-carousel"]::before,
+        :where(.css-nyvj9s).ant-carousel [class*=" ant-carousel"]::before,
+        :where(.css-nyvj9s).ant-carousel [class^="ant-carousel"]::after,
+        :where(.css-nyvj9s).ant-carousel [class*=" ant-carousel"]::after {
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-carousel {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: rgba(243, 246, 255, 0.88);
+            font-size: 14px;
+            line-height: 1.5714285714285714;
+            list-style: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            touch-action: pan-y;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-slider .slick-track,
+        :where(.css-nyvj9s).ant-carousel .slick-slider .slick-list {
+            transform: translate3d(0, 0, 0);
+            touch-action: pan-y;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-list {
+            position: relative;
+            display: block;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-list:focus {
+            outline: none;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-list.dragging {
+            cursor: pointer;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-list .slick-slide {
+            pointer-events: none;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-list .slick-slide input.ant-radio-input,
+        :where(.css-nyvj9s).ant-carousel .slick-list .slick-slide input.ant-checkbox-input {
+            visibility: hidden;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-list .slick-slide.slick-active {
+            pointer-events: auto;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-list .slick-slide.slick-active input.ant-radio-input,
+        :where(.css-nyvj9s).ant-carousel .slick-list .slick-slide.slick-active input.ant-checkbox-input {
+            visibility: visible;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-list .slick-slide>div>div {
+            vertical-align: bottom;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-track {
+            position: relative;
+            top: 0;
+            inset-inline-start: 0;
+            display: block;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-track::before,
+        :where(.css-nyvj9s).ant-carousel .slick-track::after {
+            display: table;
+            content: "";
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-track::after {
+            clear: both;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-slide img {
+            display: block;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-slide.dragging img {
+            pointer-events: none;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-initialized .slick-slide {
+            display: block;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-vertical .slick-slide {
+            display: block;
+            height: auto;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-prev,
+        :where(.css-nyvj9s).ant-carousel .slick-next {
+            position: absolute;
+            top: 50%;
+            width: 16px;
+            height: 16px;
+            transform: translateY(-50%);
+            color: #fff;
+            opacity: 0.4;
+            background: transparent;
+            padding: 0;
+            line-height: 0;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            z-index: 1;
+            transition: opacity 0.3s;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-prev:hover,
+        :where(.css-nyvj9s).ant-carousel .slick-next:hover,
+        :where(.css-nyvj9s).ant-carousel .slick-prev:focus,
+        :where(.css-nyvj9s).ant-carousel .slick-next:focus {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-prev.slick-disabled,
+        :where(.css-nyvj9s).ant-carousel .slick-next.slick-disabled {
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-prev::after,
+        :where(.css-nyvj9s).ant-carousel .slick-next::after {
+            box-sizing: border-box;
+            position: absolute;
+            top: 2.3431457505076203px;
+            inset-inline-start: 2.3431457505076203px;
+            display: inline-block;
+            width: 11.31370849898476px;
+            height: 11.31370849898476px;
+            border: 0 solid currentcolor;
+            border-inline-width: 2px 0;
+            border-block-width: 2px 0;
+            border-radius: 1px;
+            content: "";
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-prev {
+            inset-inline-start: 8px;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-prev::after {
+            transform: rotate(-45deg);
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-next {
+            inset-inline-end: 8px;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-next::after {
+            transform: rotate(135deg);
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-dots {
+            position: absolute;
+            inset-inline-end: 0;
+            bottom: 0;
+            inset-inline-start: 0;
+            z-index: 15;
+            display: flex !important;
+            justify-content: center;
+            padding-inline-start: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-dots-bottom {
+            bottom: 12px;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-dots-top {
+            top: 12px;
+            bottom: auto;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-dots li {
+            position: relative;
+            display: inline-block;
+            flex: 0 1 auto;
+            box-sizing: content-box;
+            width: 16px;
+            height: 3px;
+            margin-inline: 4px;
+            padding: 0;
+            text-align: center;
+            text-indent: -999px;
+            vertical-align: top;
+            transition: all 0.3s;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-dots li button {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 3px;
+            padding: 0;
+            color: transparent;
+            font-size: 0;
+            background: #070d1b;
+            border: 0;
+            border-radius: 3px;
+            outline: none;
+            cursor: pointer;
+            opacity: 0.2;
+            transition: all 0.3s;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-dots li button:hover,
+        :where(.css-nyvj9s).ant-carousel .slick-dots li button:focus {
+            opacity: 0.75;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-dots li button::after {
+            position: absolute;
+            inset: -4px;
+            content: "";
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-dots li.slick-active {
+            width: 24px;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-dots li.slick-active button {
+            background: #070d1b;
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-carousel .slick-dots li.slick-active:hover,
+        :where(.css-nyvj9s).ant-carousel .slick-dots li.slick-active:focus {
+            opacity: 1;
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-prev,
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-next {
+            inset-inline-start: 50%;
+            margin-block-start: unset;
+            transform: translateX(-50%);
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-prev {
+            inset-block-start: 8px;
+            inset-inline-start: 50%;
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-prev::after {
+            transform: rotate(45deg);
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-next {
+            inset-block-start: auto;
+            inset-block-end: 8px;
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-next::after {
+            transform: rotate(-135deg);
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-dots {
+            top: 50%;
+            bottom: auto;
+            flex-direction: column;
+            width: 3px;
+            height: auto;
+            margin: 0;
+            transform: translateY(-50%);
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-dots-left {
+            inset-inline-end: auto;
+            inset-inline-start: 12px;
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-dots-right {
+            inset-inline-end: 12px;
+            inset-inline-start: auto;
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-dots li {
+            width: 3px;
+            height: 16px;
+            margin: 4px 0;
+            vertical-align: baseline;
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-dots li button {
+            width: 3px;
+            height: 16px;
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-dots li.slick-active {
+            width: 3px;
+            height: 16px;
+        }
+
+        :where(.css-nyvj9s).ant-carousel-vertical .slick-dots li.slick-active button {
+            width: 3px;
+            height: 16px;
+        }
+
+        :where(.css-nyvj9s).ant-carousel-rtl {
+            direction: rtl;
+        }
+
+        .ant-carousel-rtl:where(.css-nyvj9s).ant-carousel-rtl .slick-dots {
+            flex-direction: row-reverse;
+        }
+
+        .ant-carousel-rtl:where(.css-nyvj9s).ant-carousel-vertical .slick-dots {
+            flex-direction: column;
+        }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="1ajpazg" data-token-hash="qbosa3">
+        :where(.css-nyvj9s).ant-divider {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-divider::before,
+        :where(.css-nyvj9s).ant-divider::after {
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-divider [class^="ant-divider"],
+        :where(.css-nyvj9s).ant-divider [class*=" ant-divider"] {
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-divider [class^="ant-divider"]::before,
+        :where(.css-nyvj9s).ant-divider [class*=" ant-divider"]::before,
+        :where(.css-nyvj9s).ant-divider [class^="ant-divider"]::after,
+        :where(.css-nyvj9s).ant-divider [class*=" ant-divider"]::after {
+            box-sizing: border-box;
+        }
+
+        :where(.css-nyvj9s).ant-divider {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: rgba(243, 246, 255, 0.88);
+            font-size: 14px;
+            line-height: 1.5714285714285714;
+            list-style: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+            border-block-start: 1px solid rgba(0, 0, 0, 0.89);
+        }
+
+        :where(.css-nyvj9s).ant-divider-vertical {
+            position: relative;
+            top: -0.06em;
+            display: inline-block;
+            height: 0.9em;
+            margin-inline: 8px;
+            margin-block: 0;
+            vertical-align: middle;
+            border-top: 0;
+            border-inline-start: 1px solid rgba(0, 0, 0, 0.89);
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal {
+            display: flex;
+            clear: both;
+            width: 100%;
+            min-width: 100%;
+            margin: 24px 0;
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text {
+            display: flex;
+            align-items: center;
+            margin: 16px 0;
+            color: rgba(243, 246, 255, 0.88);
+            font-weight: 500;
+            font-size: 16px;
+            white-space: nowrap;
+            text-align: center;
+            border-block-start: 0 rgba(0, 0, 0, 0.89);
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text::before,
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text::after {
+            position: relative;
+            width: 50%;
+            border-block-start: 1px solid transparent;
+            border-block-start-color: inherit;
+            border-block-end: 0;
+            transform: translateY(50%);
+            content: '';
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text-left::before {
+            width: calc(0.05 * 100%);
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text-left::after {
+            width: calc(100% - 0.05 * 100%);
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text-right::before {
+            width: calc(100% - 0.05 * 100%);
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text-right::after {
+            width: calc(0.05 * 100%);
+        }
+
+        :where(.css-nyvj9s).ant-divider .ant-divider-inner-text {
+            display: inline-block;
+            padding-block: 0;
+            padding-inline: 1em;
+        }
+
+        :where(.css-nyvj9s).ant-divider-dashed {
+            background: none;
+            border-color: rgba(0, 0, 0, 0.89);
+            border-style: dashed;
+            border-width: 1px 0 0;
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text.ant-divider-dashed::before,
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text.ant-divider-dashed::after {
+            border-style: dashed none none;
+        }
+
+        :where(.css-nyvj9s).ant-divider-vertical.ant-divider-dashed {
+            border-inline-start-width: 1px;
+            border-inline-end: 0;
+            border-block-start: 0;
+            border-block-end: 0;
+        }
+
+        :where(.css-nyvj9s).ant-divider-dotted {
+            background: none;
+            border-color: rgba(0, 0, 0, 0.89);
+            border-style: dotted;
+            border-width: 1px 0 0;
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text.ant-divider-dotted::before,
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text.ant-divider-dotted::after {
+            border-style: dotted none none;
+        }
+
+        :where(.css-nyvj9s).ant-divider-vertical.ant-divider-dotted {
+            border-inline-start-width: 1px;
+            border-inline-end: 0;
+            border-block-start: 0;
+            border-block-end: 0;
+        }
+
+        :where(.css-nyvj9s).ant-divider-plain.ant-divider-with-text {
+            color: rgba(243, 246, 255, 0.88);
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text-left.ant-divider-no-default-orientation-margin-left::before {
+            width: 0;
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text-left.ant-divider-no-default-orientation-margin-left::after {
+            width: 100%;
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text-left.ant-divider-no-default-orientation-margin-left .ant-divider-inner-text {
+            padding-inline-start: 0;
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text-right.ant-divider-no-default-orientation-margin-right::before {
+            width: 100%;
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text-right.ant-divider-no-default-orientation-margin-right::after {
+            width: 0;
+        }
+
+        :where(.css-nyvj9s).ant-divider-horizontal.ant-divider-with-text-right.ant-divider-no-default-orientation-margin-right .ant-divider-inner-text {
+            padding-inline-end: 0;
+        }
+    </style>
+    <style data-rc-order="prependQueue" data-css-hash="t4y30l" data-token-hash="90886v">
+        .anticon {
+            display: inline-flex;
+            align-items: center;
+            color: inherit;
+            font-style: normal;
+            line-height: 0;
+            text-align: center;
+            text-transform: none;
+            vertical-align: -0.125em;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .anticon>* {
+            line-height: 1;
+        }
+
+        .anticon svg {
+            display: inline-block;
+        }
+
+        .anticon .anticon .anticon-icon {
+            display: block;
+        }
+    </style>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>Hasab | Log In</title>
+    <script defer="defer" src="/static/js/main.46eb0c77.js"></script>
+    <link href="/static/css/main.6355ce1f.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/634.f7490a36.chunk.css">
+    <style>
+        /* Copyright (C) Microsoft Corporation. All rights reserved. */
+
+        .msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+            background: #ffff00 !important;
+            color: black !important;
+        }
+
+        .msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+            background: #b2d6f3 !important;
+            color: black !important;
+        }
+
+        @media screen and (forced-colors: active) {
+            .msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+                forced-color-adjust: none;
+                background-color: Highlight !important;
+                color: HighlightText !important;
+            }
+
+            .msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+                forced-color-adjust: none;
+                background: yellow !important;
+                color: black !important;
+            }
+        }
+
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uLy4uLy4uL2Nzcy9yZWFkX291dF9sb3VkX3dlYi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsOERBQThEOztBQUU5RDtJQUNJLDhCQUE4QjtJQUM5Qix1QkFBdUI7QUFDM0I7O0FBRUE7SUFDSSw4QkFBOEI7SUFDOUIsdUJBQXVCO0FBQzNCOztBQUVBO0lBQ0k7UUFDSSx5QkFBeUI7UUFDekIsc0NBQXNDO1FBQ3RDLCtCQUErQjtJQUNuQzs7SUFFQTtRQUNJLHlCQUF5QjtRQUN6Qiw2QkFBNkI7UUFDN0IsdUJBQXVCO0lBQzNCO0FBQ0oiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBDb3B5cmlnaHQgKEMpIE1pY3Jvc29mdCBDb3Jwb3JhdGlvbi4gQWxsIHJpZ2h0cyByZXNlcnZlZC4gKi9cclxuXHJcbi5tc3JlYWRvdXQtd29yZC1oaWdobGlnaHQ6bm90KC5tc3JlYWRvdXQtaW5hY3RpdmUtaGlnaGxpZ2h0KSB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmZmZjAwICFpbXBvcnRhbnQ7XHJcbiAgICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcclxufVxyXG5cclxuLm1zcmVhZG91dC1saW5lLWhpZ2hsaWdodDpub3QoLm1zcmVhZG91dC1pbmFjdGl2ZS1oaWdobGlnaHQpIHtcclxuICAgIGJhY2tncm91bmQ6ICNiMmQ2ZjMgIWltcG9ydGFudDtcclxuICAgIGNvbG9yOiBibGFjayAhaW1wb3J0YW50O1xyXG59XHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAoZm9yY2VkLWNvbG9yczogYWN0aXZlKSB7XHJcbiAgICAubXNyZWFkb3V0LXdvcmQtaGlnaGxpZ2h0Om5vdCgubXNyZWFkb3V0LWluYWN0aXZlLWhpZ2hsaWdodCkge1xyXG4gICAgICAgIGZvcmNlZC1jb2xvci1hZGp1c3Q6IG5vbmU7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogSGlnaGxpZ2h0ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgY29sb3I6IEhpZ2hsaWdodFRleHQgIWltcG9ydGFudDtcclxuICAgIH1cclxuXHJcbiAgICAubXNyZWFkb3V0LWxpbmUtaGlnaGxpZ2h0Om5vdCgubXNyZWFkb3V0LWluYWN0aXZlLWhpZ2hsaWdodCkge1xyXG4gICAgICAgIGZvcmNlZC1jb2xvci1hZGp1c3Q6IG5vbmU7XHJcbiAgICAgICAgYmFja2dyb3VuZDogeWVsbG93ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgY29sb3I6IGJsYWNrICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */
+    </style>
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="flex flex-col dark:bg-dark bg-white min-h-screen w-full">
+            <div class=" "></div>
+            <div class="flex flex-col items-start justify-start w-full ">
+                <div class="relative flex flex-col justify-between items-center min-h-screen b w-full">
+                    <div class="w-full md:w-1/2 min-h-screen py-[50px] flex flex-col items-center justify-start"><a
+                            class="flex items-center space-x-2 mx-auto mb-5" href="/" data-discover="true"><img
+                                class="w-[40px] h-[40px] object-cover" src="/static/media/logo.9e0a3de4734ff6c18cfe.png"
+                                alt="Hasab logo">
+                            <h3 class="text-dark text-[30px] text-gradient">Hasab</h3>
+                        </a>
+                        <div
+                            class="flex flex-col items-start w-full max-w-[400px] md:shadow-xl z-[1] md:border-[1px] dark:border-neutral/20 p-6 dark:bg-dark/20 bg-white/20 backdrop-blur-2xl h-full rounded-2xl md:p-10 space-y-5">
+                            <h3 class="text-[25px] text-dark/80">Log in to your account</h3>
+                            <form class="w-full flex flex-col items-start">
+                                <div class="w-full space-y-4">
+                                    <div class="flex flex-col space-y-2 w-full">
+                                        <p class="required text-dark dark:text-white/80 text-sm">Email</p><input
+                                            class="w-full border border-gray-300 rounded-md" type="email" name="email"
+                                            placeholder="Email">
+                                    </div>
+                                    <div class="flex flex-col space-y-2 w-full">
+                                        <p class="required text-dark dark:text-white/80 text-sm">Password</p>
+                                        <div class="relative"><input class="w-full border border-gray-300 rounded-md"
+                                                type="password" name="password" placeholder="Password">
+                                            <div class="absolute right-4 top-1/2 transform -translate-y-1/2"><svg
+                                                    stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 256 256"
+                                                    class="cursor-pointer text-dark dark:text-neutral/60" height="25"
+                                                    width="25" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M53.92,34.62A8,8,0,1,0,42.08,45.38L61.32,66.55C25,88.84,9.38,123.2,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208a127.11,127.11,0,0,0,52.07-10.83l22,24.21a8,8,0,1,0,11.84-10.76Zm47.33,75.84,41.67,45.85a32,32,0,0,1-41.67-45.85ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.16,133.16,0,0,1,25,128c4.69-8.79,19.66-33.39,47.35-49.38l18,19.75a48,48,0,0,0,63.66,70l14.73,16.2A112,112,0,0,1,128,192Zm6-95.43a8,8,0,0,1,3-15.72,48.16,48.16,0,0,1,38.77,42.64,8,8,0,0,1-7.22,8.71,6.39,6.39,0,0,1-.75,0,8,8,0,0,1-8-7.26A32.09,32.09,0,0,0,134,96.57Zm113.28,34.69c-.42.94-10.55,23.37-33.36,43.8a8,8,0,1,1-10.67-11.92A132.77,132.77,0,0,0,231.05,128a133.15,133.15,0,0,0-23.12-30.77C185.67,75.19,158.78,64,128,64a118.37,118.37,0,0,0-19.36,1.57A8,8,0,1,1,106,49.79,134,134,0,0,1,128,48c34.88,0,66.57,13.26,91.66,38.35,18.83,18.83,27.3,37.62,27.65,38.41A8,8,0,0,1,247.31,131.26Z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-5 flex flex-row items-center space-x-3 justify-between w-full">
+                                    <div class="flex flex-row items-center justify-center space-x-3"><input
+                                            type="checkbox" id="remember_me" name="remember_me"
+                                            class="w-max self-start"><label
+                                            class="hover:text-gradient text-sm text-dark/70" for="remember_me">Remember
+                                            me</label></div><a class="hover:text-gradient text-sm text-dark/70"
+                                        href="/reset-password" data-discover="true">Forgot Password?</a>
+                                </div><button
+                                    class="button w-full button bg-gradient-primary text-neutral space-x-4 mt-5 "
+                                    type="submit"><span>Login</span> </button>
+                            </form>
+                            <div class="ant-divider css-nyvj9s ant-divider-horizontal ant-divider-with-text ant-divider-with-text-center ant-divider-plain"
+                                role="separator"><span class="ant-divider-inner-text">or</span></div><button
+                                class="w-full button2 bg-transparent hover:bg-gray-50/10 mt-3"
+                                icon="[object Object]">Login with Google</button>
+                            <p class="mt-3">Don't have an account? <a class="hover:text-gradient text-sm text-dark/70"
+                                    href="/register" data-discover="true">Register for free.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
